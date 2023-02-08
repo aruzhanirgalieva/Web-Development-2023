@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Facebook - Выполните вход или зарегистрируйтесь</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, Arial, sans-serif;
+            background-color: rgb(240, 242, 245);
+            color: rgb(28, 30, 33);
+        }
+        main{
+            height: 100vh;
+            width: 100vw;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            margin-top:-45px;
+        }
+        .logo{
+            width: 450px;
+            text-align: left;
+            margin-top: -80px;
+        }
+        .logo img{
+            width: 315px;
+            margin-top: -50px;
+            margin-left: -55px;
+        }
+        .logo h2{
+            font-size: 27px;
+            font-weight: normal;
+            padding: 0 25px;
+            line-height: 32px;
+            color: black;
+            margin-top: -20px;
+            margin-left: -50px;
+        }
+        .login{
+            flex: 0 0 40%;
+            text-align: center;
+            margin-right: -70px;
+        }
+        .login .info{
+            background-color: #ffffff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px 1px rgb(211,211,211);
+            padding: 16px;
+            max-width: 400px;
+            margin-top: -10px;
+            margin-bottom: 80px;
+        }
+        .login .info input, .login .info .btn1 {
+            width: 100%;
+            margin: 6px 0;
+            height: 50px;
+            vertical-align: middle;
+            font-size: 15px;
+        }
+        .login .info input {
+            border: 1px solid #dddfe2;
+            border-radius: 8px;
+            color: #1d2129;
+            padding: 0 15px;
+            outline: none;
+            box-sizing: border-box;
+        }
+        .login .info input:focus {
+            border-color: rgb(24, 119, 242);
+            box-shadow: 0 0 0 2px rgb(231, 243, 255);
+            color: black;
+        }
+        .login .info .btn1 {
+            background-color: rgb(24, 119, 242);
+            border: none;
+            border-radius: 5px;
+            font-size: 20px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .login .info a {
+            display: block;
+            color: rgb(24, 119, 242);
+            font-size: 14px;
+            text-decoration: none;
+            padding: 10px 0 20px;
+            border-bottom: 1px solid rgb(218, 221, 225);
+        }
+        .login .info a:hover {
+            text-decoration: underline;
+        }
+        .login .info .btn2{
+            background-color: rgb(66, 183, 42);
+            border: none;
+            border-radius: 6px;
+            font-size: 17px;
+            line-height: 48px;
+            padding: 0 16px;
+            color: white;
+            font-weight: 700;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        .login p {
+            font-size: 14px;
+            margin-top: -50px;
+        }
+        .login p a {
+            text-decoration: none;
+            color: rgb(28, 30, 33);
+            font-weight: 600;
+        }
+        .login p a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            height: 22vh;
+            background-color: white;
+            margin-right: -50px;
+        }
+        .footer1 {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2px;
+        }
+        footer ol {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 1px 0;
+        }
+        footer ol:first-child {
+            border-bottom: 1px solid rgb(221, 223, 226);
+        }
+        footer ol:first-child li:last-child button{
+            background-color:rgb(245, 246, 247);
+            border: 1px solid rgb(204, 208, 213);
+            outline: none;
+            padding: 0 8px;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        footer ol li {
+            padding-right: 10px;
+            font-size: 12px;
+        }
+        footer ol li a {
+            text-decoration: none;
+        }
+        footer ol li a:hover {
+            text-decoration: underline;
+        }
+        footer small {
+            font-size: 11px;
+        }
+
+        .linkie {
+            color: rgb(128,128,128);
+        }
+    </style>
+
+</head>
+<body>
+<main>
+    <div class="box">
+        <div class="logo">
+            <img src="fb_logo.svg" alt="logo">
+            <h2>Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+        </div>
+        <div class="login">
+            <div class="info">
+                <input type="text" placeholder="Электронный адрес или номер телефона">
+                <input type="password" placeholder="Пароль">
+                <button class="btn1">Вход</button>
+                <a href="#">Забыли пароль?</a>
+                <button class="btn2">Создать новый аккаунт</button>
+            </div>
+            <p><a href="#"><b>Создать Страницу</b></a> знаменитости, музыкальной группы или компании.</p>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer1">
+        <ol>
+            <li class="linkie">Русский</li>
+            <li><a href="#" class="linkie">English (US)</a></li>
+            <li><a href="#" class="linkie">Türkçe</a></li>
+            <li><a href="#" class="linkie">Bahasa Indonesia</a></li>
+            <li><a href="#" class="linkie">中文(简体)</a></li>
+            <li><a href="#" class="linkie">Қазақша</a></li>
+            <li><a href="#" class="linkie">Deutsch</a></li>
+            <li><a href="#" class="linkie">한국어</a></li>
+            <li><a href="#" class="linkie">Shqip</a></li>
+            <li><a href="#" class="linkie">Español</a></li>
+            <li><a href="#" class="linkie">Português (Brasil)</a></li>
+            <li><button>+</button></li>
+        </ol>
+        <ol>
+            <li><a href="#" class="linkie">Регистрация</a></li>
+            <li><a href="#" class="linkie">Вход</a></li>
+            <li><a href="#" class="linkie">Messenger</a></li>
+            <li><a href="#" class="linkie">Facebook Lite</a></li>
+            <li><a href="#" class="linkie">Watch</a></li>
+            <li><a href="#" class="linkie">Места</a></li>
+            <li><a href="#" class="linkie">Игры</a></li>
+            <li><a href="#" class="linkie">Marketplace</a></li>
+            <li><a href="#" class="linkie">Facebook Pay</a></li>
+            <li><a href="#" class="linkie">Oculus</a></li>
+            <li><a href="#" class="linkie">Portal</a></li>
+            <li><a href="#" class="linkie">Instagram</a></li>
+            <li><a href="#" class="linkie">Bulletin</a></li>
+            <li><a href="#" class="linkie">Местные</a></li>
+            <li><a href="#" class="linkie">Благотворительные акции</a></li>
+            <li><a href="#" class="linkie">Услуги</a></li>
+            <li><a href="#" class="linkie">Центр информации о голосовании</a></li>
+            <li><a href="#" class="linkie">Группы</a></li>
+            <li><a href="#" class="linkie">Информация</a></li>
+            <li><a href="#" class="linkie">Создать рекламу</a></li>
+            <li><a href="#" class="linkie">Создать Страницу</a></li>
+            <li><a href="#" class="linkie">Разработчикам</a></li>
+            <li><a href="#" class="linkie">Вакансии</a></li>
+            <li><a href="#" class="linkie">Конфиденциальность</a></li>
+            <li><a href="#" class="linkie">Рекламные предпочтения</a></li>
+            <li><a href="#" class="linkie">Условия использования</a></li>
+            <li><a href="#" class="linkie">Справка</a></li>
+        </ol>
+        <small class="linkie">Meta © 2023</small>
+    </div>
+</footer>
+</body>
+</html>

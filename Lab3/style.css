@@ -1,0 +1,115 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #37c1f3, #23d5ab);
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    margin: auto;
+    text-align: center;
+}
+.container{
+    height: 600px;
+    width: 450px;
+    background:#add8e6;
+    border-radius: 17px;
+    box-shadow: 0px 2px 5px 1px #add8e6;
+    padding: 20px;
+    overflow: auto;
+}
+
+.content{
+    align-items: center;
+    overflow-y: auto;
+    border-radius: 15px;
+    color:#000000;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.fa-check-circle{
+    color: #99f19c;
+    cursor: pointer;
+}
+
+.add-to-do input{
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    padding: 0 10px;
+    margin: 2px 0;
+    align-items: center;
+}
+
+.add-to-do{
+    position: relative;
+    width: 380px;
+    height: 40px;
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px;
+}
+
+.content ul{
+    padding: 0;
+    margin: 0;
+}
+
+.item{
+    width: 380px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1 px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item i.co{
+    position: absolute;
+    font-size: 20px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+}
+
+.item i.co:hover{
+    cursor: pointer;
+}
+
+.item p.text{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    left: 50px;
+    top: 10px;
+    max-width:  285px
+}
+
+.item i.de{
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 10px;
+}
+
+.item i.de:hover{
+    color: #000000;
+    cursor: pointer;
+}

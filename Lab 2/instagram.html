@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Instagram-Logo.wine.svg">
+    <title>Instagram</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 80vh;
+            align-items: center;
+            background-color: #fafafa;
+            font-family: Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .foto{
+            position: relative;
+        }
+
+        .panel{
+            width: 350px;
+            background-color: white;
+            border: 1px solid #b9b6b6;
+            padding: 20px 21px;
+            margin: 4px 0;
+            display: flex;
+        }
+
+        .login{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #ins-logo{
+            width: 65%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        form{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-color: #dddfe2;
+        }
+
+        .input-log-pass{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #dedede;
+            border-radius: 2px;
+        }
+
+        .input-log-pass::placeholder{
+            color: #8a8a8a;
+            font-size: 12px;
+        }
+
+        .input-log-pass{
+            outline: none;
+            border: 1px solid #8a8a8a;
+        }
+
+        .btn{
+            width: 100%;
+            margin: 10px 0;
+            padding: 7px 0;
+            background-color: #b2dffc;
+            color: white;
+            border-radius: 5px;
+            font-size:  15px;
+            border: none;
+            color: white;
+            font-weight: 350;
+            cursor: pointer;
+        }
+
+        .line-or{
+            display: flex;
+            width: 100%;
+            font-size: 13px;
+            color: #8a8a8a;
+            font-weight:  bold;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .line{
+            flex: 1;
+            height: 1px;
+            background-color:  #8a8a8a;
+        }
+
+        .facebook{
+            margin: 20px 0;
+            color:  #3b5998;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .forgot{
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+        }
+
+        .regis{
+            font-size: 14px;
+            justify-content: center;
+        }
+
+        .regis a{
+            font-weight: 600;
+            text-decoration: none;
+            color: #3bb1ff;
+        }
+
+        .download{
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .foto-down{
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .dwnld{
+            width: 140px;
+            height: auto;
+        }
+
+        footer{
+            margin-bottom: 42px;
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 2px;
+        }
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 12px;
+            list-style: none;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        li, a{
+            text-decoration: none;
+            color: #8a8a8a;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="foto">
+        <img src="iphone.jpg" alt="phone">
+    </div>
+    <div class="row">
+        <div class="panel login">
+            <img id="ins-logo" src="logo.jpg" alt="int-logo">
+            <form>
+                <input class="input-log-pass" type="text" name="username" required placeholder="Телефон, имя пользователя или эл.адрес">
+                <input class="input-log-pass" type="password" name="password" required placeholder="Пароль">
+
+                <button class="btn">Войти</button>
+
+                <div class="line-or">
+                    <div class="line">
+
+                    </div>
+
+                    <p>ИЛИ</p>
+
+                    <div class="line">
+
+                    </div>
+                </div>
+
+                <div class="facebook">
+                    <img src="facebook_logo.jpg" class="img-fluid rounded" alt="[+]" style="width: 16px; height: 16px">
+
+                    <span class="ms-2">Войти через Facebook</span>
+                </div>
+                <a href="#" class="forgot">Забыли пароль?</a>
+            </form>
+        </div>
+
+        <div class="panel regis">
+            <p>У вас ещё нет аккаунта?</p>
+            <a href="#">Зарегистрироваться</a>
+        </div>
+
+        <div class="download">
+            <p>Установите приложение.</p>
+            <div class="foto-down">
+                <img class="dwnld" src="appstore.jpg" alt="appstore">
+                <img class="dwnld" src="googleplay.jpg" alt="googleplay">
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <ul>
+        <li><a href="#">Meta</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Вакансии</a></li>
+        <li><a href="#">Помощь</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Конфиденциальность</a></li>
+        <li><a href="#">Условия</a></li>
+        <li><a href="#">Популярные аккаунты</a></li>
+        <li><a href="#">Хэштеги</a></li>
+        <li><a href="#">Места</a></li>
+        <li><a href="#">Instagram Lite</a></li>
+        <li><a href="#">Танцы</a></li>
+        <li><a href="#">Фитнес</a></li>
+        <li><a href="#">Еда и напитки</a></li>
+        <li><a href="#">Дом и сад</a></li>
+        <li><a href="#">Музыка</a></li>
+        <li><a href="#">Изобразительное искусство</a></li>
+    </ul>
+    <ul>
+        <li>Русский</li>
+        <li>&copy; 2023 Instagram from Meta</li>
+    </ul>
+</footer>
+</body>
+</html>
